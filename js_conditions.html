@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="place"></div>
+    <script>
+      var today = new Date();
+      var hrs = today.getHours();
+      if (hrs < 12) {
+        document.getElementById("place").innerHTML = "good morning";
+      } else {
+        document.getElementById("place").innerHTML = "good afternoon";
+      }
+    </script>
+  </body>
+</html>
